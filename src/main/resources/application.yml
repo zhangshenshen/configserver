@@ -1,3 +1,56 @@
+server:
+  port: 3301
+
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhangshenshen/springcloudconfig.git
+          ignore-local-ssh-settings: true
+          private-key:
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABBgpHj7iv
+            a83s1MF9CM0e/kAAAAEAAAAAEAAAGXAAAAB3NzaC1yc2EAAAADAQABAAABgQC+E3ojsenR
+            ePsDfkLHxKUjCcJ/KPSDyxEn17myRlUAGosPRht0a/ectWV0D3qHRBt52Phk8WOwCzvWFN
+            DL+pVAHJSksjIgQGl2sCuiNMRnYSezmlpNsZFexhgxeEx8xEX+7VlaTELALSPvYGrYq27n
+            zQtReM7aG1swFYW9SoHPd/2OGqLDFWC22XqQOkYZUWejBxLqqW8UgLKOdCXm9efEaV1X/3
+            8fG5eUfnsioguKrfckERwlsRoySFmJLtHUMOpFDM/lDkuGQkocWAsvRP1rVp94kPp3vA+R
+            eTtQPx7Ox57q33IJ5O/beSTU7tz5z4NipCRg3Aa5GFns73pFXUjm1td9ZDPO/zxw+iy7LT
+            VLRQd/kKV7YYqo2urJ7Oex1L2Tr97ZMQEVaPQJK6SXQkWx6WQq8STy9SK+gC5Ea25RMN3J
+            3sXyoPn6JRJNu0WhIEe80EKRdFsmS+SlJACyLuB/KI8m+Dd7dl1PxGambRo0W7JpaGiQh0
+            /FVWwHKOB2YS8AAAWQ3X6N7mm/NhaVBV/cLM8dDJq4qllk5dY34bsWB3jUnkamAMtqMZnS
+            2n3cvcafc1DL3ulgfde5XQ+O2Qxlb4McKzSJ/QJBCeH1BnVIyN7LYMmawzhcs7LhxdktJk
+            7fgslVGjs3DC3QDIUkXYgR7P4Hh5yQFKpqkeGORIYegb0o8htOIzp1DBbY6+M9SIcjMAKd
+            af2d5FuEMVd0Cf3sQvrxtnEfHsj8hTKeQAeAT7irT7sFjin7RaVlSGBMDFOMwzP4TwYg3o
+            UOW7JAbJucM0R6EEmFUmB+o3b7LL2yZ0XY9zAO+Y+TQMqrOQLcFNIYHZduKyaKSrXSyiET
+            TICLRU+g0PNOGX+AsGkenjRTPOQdR1AjTJSIOSFIskKttPtemXUSXT3ipJQxAKRuqRqC+D
+            Esd81N3Y6A9CxkAnZZBp97slxvuE7uZ87DooPKt4FLMTkQr9m1y2rU4tbpdrWADiZ+c2sN
+            aIGUCOHdxALeffIy5lVIhsf6giXqowBKxjbuVqQWvnfWBx8b3pEUYThLYm7yndMPOefftL
+            bNU6d5DNDZt1mITGDvGC3sC+Zz2CT2hlHGCk5xz/2EhsK0upZ1YVyoD1gVJeu0eE2MvNvE
+            FItgGR0QaRA548Iu8cWkgYbdORcEEoDK12spz9wCQxiahc4bTCbq6iNE8ZgBiYgykwlAcj
+            Qcmda/1gZxbpfwGknlidw47zMBqMI19BWcKfXiUp9MVDWNgNnE9HIwB8cPA8yMh3gFP9zQ
+            7Ef5ku0m6BIqQjgRd7yKa3nBS/rrlYllgdEHmO2eqoAG4jjGM0IwsX7pPaxwjX7oWyEpZf
+            Zngd6q2R0lEk5c2PO4FFSb37pf8+MtnixUjECJ2W/m0iPVWY6WFNnnCBogyWcSZpZ9nuRN
+            UIWDwQztO/zUsOiyHw7yJJZ3tfXuymPwRnoHvkY5hb9PiJZ2LxLeCyMYSVRNz+3n0qslax
+            j+0qBIMMdZ1DMAUGfulqZXL0Kt3g0QvZKCa5hVp+uPl+WNLiRMSqzA4tF8QXflkaRCwkId
+            /gl1QkZW2ncO9UqVGw0YnMCKwvUZhzdVCVvgcZwp1FSNhCu5F28RHoE4hJF0EszC5DfzlG
+            hhN/2KWuV+OjFbg4z2yHIxNwaFeHfw5PAJu16F0iDoLqHoLJ9XHOPmpcKYrK+s5FAJ/Vy/
+            jIAH1W8R6wwMjXYQSCjLX72oA8IVrovpZXYu4q5X9iKp/hpWR47L6+t2RqKkKAULUJwANc
+            ji0xezYhlEhlAucuHqSdIy1GNygv8mJ7VTsC/AYIHMXWlVmzy103N2PtSWTp4IG3Cjzc+O
+            0pcAyn8YwB5VIU5CFDX3vRF5IkksUHbnCSNM1gmV72x2n9M4RKFPLJCUTrs9/n95kmUU8O
+            IvhD9dLlPc5flq6NKkTRp5i75J/dT+1zZbD5PjC89Yl7y7DV4bP07XhJtfk7JXlX3FuAE8
+            NSBnQF9tNTS0hJVqC6pCa4zisapwYTMhQIRsnqN8qKW7e+z8voECgmrjRpiaPnAYdUoBWY
+            yMup62FJeTx2nHkoOjDYXc7dZUHOlzS9EHGxygZpDetIlwgJXDCMPf4aXhUeMQGo6oSgAB
+            k622clptymCIBKZtMRziJYc7E4OfPpcJh/zu+7nYYX9Xw1rMRYyTISEQZsxFpDLKeS2mTL
+            xtEnu9PUu81Wo7714/lsdVKQcwV85kJ0kHUZUHm6IXrn/bxQsNPdNAS5nPiTZipXVWX0xG
+            v8NYNZlckez73nNIiBehEGxJPDolH8OvwA17UO8dSL+y7XfwYPQjJf1fw+kkoz7tJTxPYy
+            XQsPZTq1Mwf5l22ktOeQTUPZpEBo2pbTfn8oqlyHEcZGX82aD8QzeMmMRmv8qOQbwqGh2Y
+            X6xUMDrCoFPjT6Xo1NIIn4LLVl4=
+            -----END OPENSSH PRIVATE KEY-----
+          passphrase: 1932
+          skip-ssl-validation: true
+          search-paths: config
+        bootstrap: true
